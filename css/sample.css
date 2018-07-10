@@ -323,18 +323,14 @@ h1 {
   color: #339fd1;
   text-decoration: none; }
 
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
-
-#contents #main th {
-  padding-right: 20px; }
-
 #contents #main th, #contents #main td {
   padding: 20px 0;
   color: #626262;
   font-size: 14px;
   font-size: 1.4rem; }
+
+#contents #main th {
+  padding-right: 20px; }
 
 #contents #main h2.company_title {
   margin-bottom: 0px; }
