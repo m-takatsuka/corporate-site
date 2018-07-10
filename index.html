@@ -29,8 +29,7 @@
   <div id="header_in" class="container">
     <div class="row">
       <div class="six columns logo">
-
-        <img class="u-max-full-width" src="images/top/logo.png" alt="株式会社サンプル" srcset="images/top/logo@2x.png 2x" />
+      <h1><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="株式会社サンプル" srcset="images/top/logo@2x.png 2x" /></a></h1>
 
       </div>
       <div class="six columns navi">
@@ -142,13 +141,16 @@ var latlng = new google.maps.LatLng(35.6694293,139.7189323);/* 座標 */
 var myOptions = {
 zoom: 16, /*拡大比率*/
 center: latlng,
+      scrollwheel: false,
+      disableDoubleClickZoom: true,
+      draggable: false,
 mapTypeControlOptions: { mapTypeIds: ['style', google.maps.MapTypeId.ROADMAP] }
 };
 var map = new google.maps.Map(document.getElementById('map1'), myOptions);
 
 /*アイコン設定*/
 var icon = new google.maps.MarkerImage('images/top/pin.png',/*画像url*/
-new google.maps.Size(70,84),/*アイコンサイズ*/
+new google.maps.Size(48,56),/*アイコンサイズ*/
 new google.maps.Point(0,0)/*アイコン位置*/
 );
 var markerOptions = {
@@ -219,6 +221,19 @@ googleMap();
 </footer>
 <!-- //footer -->
 
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+  $(function(){
+    $(document).ready(function(){
+
+      $("#sp_navi_btn").click(function () {
+        $(this).next().slideToggle();
+      });
+
+    });
+  });
+</script>
 
 </body>
 </html>
