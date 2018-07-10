@@ -475,15 +475,6 @@ h1{
 
     background-image: url("../images/news/sub_cover@2x.jpg");
 
-h2{
-text-align:center;
-color:white;
-font-size:16px;
-font-size:1.6rem;
-font-weight:bold;
-margin:0;
-letter-spacing:0.2rem
-}
 
   }
 
@@ -496,20 +487,34 @@ letter-spacing:0.2rem
       margin-left: 70px;
     }
     
-    h2{
-      text-align:center;
-      color:white;
-      font-size:32px;
-      font-size:3.2rem;
-      font-weight:bold;
-      margin:0;
-      letter-spacing:0.2rem
-      }
-    
   }
   // min-width: 551px
 
 }
+
+#sub_cover h2 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.2rem;
+}
+
+@media (min-width: 550px){
+#sub_cover h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.2rem;
+    }
+}
+
+
 
 #contents{
   padding-top: 20px;
